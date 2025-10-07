@@ -3,84 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Brite Bootstrap Website</title>
+    <title>My 98.css Website</title>
     
-    <!-- Local Brite Bootstrap CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- 98.css CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
     
-    <!-- Optional: Custom styles -->
+    <!-- Optional: Custom styles for full-page centering -->
     <style>
         body {
-            background-color: #f8f9fa; /* Light gray background */
+            background: #008080; /* Teal Win98 wallpaper vibe */
+            margin: 0;
+            padding: 50px;
+            font-family: 'MS Sans Serif', sans-serif;
         }
-        
-        /* Override Bootstrap primary color (lime green) */
-        :root {
-            --bs-primary: #007bff; /* Bootstrap blue */
-            --bs-primary-rgb: 0, 123, 255;
-            --bs-primary-text-emphasis: #003d7a;
-            --bs-primary-bg-subtle: #cce7ff;
-            --bs-primary-border-subtle: #99cfff;
-        }
-        
-        /* Dark theme override */
-        [data-bs-theme=dark] {
-            --bs-primary: #0d6efd; /* Darker blue for dark theme */
-            --bs-primary-rgb: 13, 110, 253;
-            --bs-primary-text-emphasis: #6ea8fe;
-            --bs-primary-bg-subtle: #031633;
-            --bs-primary-border-subtle: #084298;
+        .desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">My Site</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Breadcrumbs -->
-    <nav aria-label="breadcrumb" class="container mt-3">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About</li>
-        </ol>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h1 class="card-title">About Us</h1>
-                        <p class="card-text">This is the About page. We're a team passionate about web development. Explore our story below.</p>
-                        <a href="about-team.html" class="btn btn-primary">Meet the Team</a>
-                    </div>
+    <div class="desktop">
+        <!-- Main Window -->
+        <div class="window" style="width: 400px;">
+            <div class="title-bar">
+                <div class="title-bar-text">Welcome to My Retro Site</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
                 </div>
+            </div>
+            <div class="window-body">
+                <p>Hello from 1998! This site runs on 98.css for that authentic Windows feel.</p>
+                
+                <!-- Navigation as a simple menu (Win98-style) -->
+                <menu>
+                    <li><a href="index.html"><button>Home</button></a></li>
+                    <li><a href="about.html"><button>About</button></a></li>
+                    <li><a href="contact.html"><button>Contact</button></a></li>
+                </menu>
+                
+                <!-- Quick Action Button -->
+                <p>Ready to explore?</p>
+                <button class="default">Get Started</button>
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
