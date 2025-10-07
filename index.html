@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bootstrap GitHub Website</title>
+    <title>My Brite Bootstrap GitHub Website</title>
     
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Local Brite Bootstrap CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
     
-    <!-- Optional: Custom styles (overrides Bootstrap if needed) -->
+    <!-- Optional: Custom styles -->
     <style>
         body {
             background-color: #f8f9fa; /* Light gray background */
@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Navigation Bar (Bootstrap component) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">  <!-- Changed to bg-primary for Brite's blue accents -->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">My Site</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,14 +39,14 @@
         </div>
     </nav>
 
-    <!-- Main Content (using Bootstrap grid and cards) -->
+    <!-- Main Content -->
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card">
                     <div class="card-body text-center">
-                        <h1 class="card-title">Welcome to My Bootstrap Website!</h1>
-                        <p class="card-text">This site is now powered by Bootstrap. It's responsive, so it looks great on mobile, tablet, or desktop. Check out the navbar above—it collapses on small screens!</p>
+                        <h1 class="card-title">Welcome to My Brite Website!</h1>
+                        <p class="card-text">This site now uses the Brite theme from Bootswatch. It's bright, responsive, and ready to customize!</p>
                         <button class="btn btn-primary">Get Started</button>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS CDN (place at bottom for faster loading) -->
+    <!-- Bootstrap JS CDN (keep this—Brite doesn't include JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
